@@ -121,7 +121,7 @@ class DjangoSession(models.Model):
 
 
 class Facial(models.Model):
-    id = models.AutoField()
+    id = models.AutoField(primary_key=True)
     idframe = models.CharField(max_length=100, blank=True, null=True)
     fecha = models.CharField(max_length=50, blank=True, null=True)
     hora = models.TimeField(blank=True, null=True)
